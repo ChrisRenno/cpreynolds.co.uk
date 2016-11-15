@@ -8,7 +8,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Projects</title>
+	<title>Get in Touch</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -26,9 +26,10 @@
     
     <!-- CSS
   ================================================== -->
- 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
-    <script src="js/scripts.js"></script>
+ 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="js/jquery.jigowatt.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -55,10 +56,10 @@
 				<li id="menu-item-1">
 					<a href="index.html">Home</a>
 				</li>
-				<li id="menu-item-2" class="current">
+				<li id="menu-item-2">
 					<a href="projects.html">Projects</a>
 				</li>
-				<li id="menu-item-6">
+				<li id="menu-item-6" class="current">
 					<a href="contact.html">Contact</a>
 				</li>
 			</ul>
@@ -67,62 +68,43 @@
 </header>
 
 <div class="container">
-	<aside class="four columns left-sidebar">
-		<div class="sidebar-widget">
-			<h2>What is this?</h2>
-			<p>About your projects.</p>
-		</div>
+	<article class="ten columns main-content">
+		<h1>Send us a message</h1>
 
-		<div class="sidebar-widget">
-			<h2>Some links</h2>
-			<ul>
-				<li><a href="#">Link 1</a></li>
-				<li><a href="#">Link 2</a></li>
-				<li><a href="#">Link 3</a></li>
-				<li><a href="#">..more..</a></li>
-				<li><a href="#">..more..</a></li>
-			</ul>
-		</div>
-	</aside>
-	<!-- End Left Sidebar -->
-
-
-	<article class="eight columns main-content">
-		<h1>Project 1</h1>
-		<p>Description and links, if any.</p>
-		
-		<h1>Project 2</h1>
-		<p>Description and links, if any.</p>
-		
-		<h1>Project 3</h1>
-		<p>Description and links, if any.</p>
-		
-		<h1>Project 4</h1>
-		<p>Description and links, if any.</p>
+		<div id="message"></div>
+		<form method="post" action="contact.php" name="contactform" id="contactform">
+			<fieldset>
+				<legend>Please fill in the following form to contact me</legend>
+				
+				<label for="name" accesskey="U"><span class="required">*</span> Your Name</label>
+				<input name="name" type="text" id="name" size="30" value="" />
+				<br />
+				<label for="email" accesskey="E"><span class="required">*</span> Email</label>
+				<input name="email" type="text" id="email" size="30" value="" />
+				<br />
+				<label for="phone" accesskey="P"><span class="required">*</span> Phone</label>
+				<input name="phone" type="text" id="phone" size="30" value="" />
+				<br />
+				<label for="subject" accesskey="S">Subject</label>
+				<select name="subject" id="subject">
+					<option value="casual">Casual hi</option>
+					<option value="a smthngimp">Something important</option>
+					<option value="a regproject">Regarding a project</option>
+				</select>
+				<br />
+				<label for="comments" accesskey="C"><span class="required">*</span> Your comments</label>
+				<textarea name="comments" cols="40" rows="3" id="comments" style="width: 350px;"></textarea>
+				<br />
+				<p><span class="required">*</span> Are you human?</p>
+				<label for="verify" class="verify-this" accesskey="V">&nbsp;&nbsp;&nbsp;3 + 1 =</label>
+				<input name="verify" type="text" id="verify" class="verify-this" size="4" value="" style="width: 30px;" />
+				<br />
+				<br />
+				<input type="submit" class="submit" id="submit" value="Submit" />
+			</fieldset>
+		</form>
 	</article>
 	<!-- End main Content -->
-
-
-	<aside class="four columns right-sidebar">
-		<div class="sidebar-widget">
-			<h2>Testimonials</h2>
-			<blockquote class="testimonial no-after">
-				Awesome!
-				<cite>Person A</cite>
-			</blockquote>
-
-			<blockquote class="testimonial no-after">
-				Superb :)
-				<cite>Person B</cite>
-			</blockquote>
-
-			<blockquote class="testimonial no-after">
-				Cool!
-				<cite>Person C</cite>
-			</blockquote>
-		</div>
-	</aside>
-	<!-- End Right Sidebar -->
 </div>
 
 <footer>

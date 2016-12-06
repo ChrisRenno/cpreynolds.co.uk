@@ -7,8 +7,7 @@ body {
     margin-left: 10px
 }
 
-#rupert {
-    position: fixed;
+.rupert {
     bottom: 0;
     width: 100%;
     text-align: right;
@@ -43,4 +42,6 @@ li a {
 li a:hover {
     background-color: #111;
 }
+
+
 

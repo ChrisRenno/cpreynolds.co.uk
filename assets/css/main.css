@@ -5,12 +5,7 @@ body {
     "Droid Sans", "Helvetica Neue", sans-serif;
     padding-top: 40px; 
     margin-left: 10px
-}
 
-.rupert {
-    bottom: 0;
-    width: 100%;
-    text-align: right;
 }
 
 ul {
@@ -19,6 +14,7 @@ ul {
     left: 0;
     right: 0;
     list-style-type: none;
+    float: right;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -32,16 +28,30 @@ li {
 li a {
     display: block;
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 14px 16px;
     text-decoration: none;
 }
 
+.logo {
+    float: left;
+    width: 66%;
+}
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #111;
 }
 
+#text {
+    width: 66%
+}
+
+#rupert {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 34%;
+}
 
 

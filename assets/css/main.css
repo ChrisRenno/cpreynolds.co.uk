@@ -4,7 +4,8 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", 
     "Droid Sans", "Helvetica Neue", sans-serif;
     padding-top: 40px; 
-    margin-left: 10px
+    margin-left: 10px;
+    padding-bottom: 0px;
 
 }
 
@@ -21,10 +22,6 @@ ul {
     background-color: #333;
 }
 
-li {
-    float: left;
-}
-
 li a {
     display: block;
     color: white;
@@ -35,7 +32,7 @@ li a {
 
 .logo {
     float: left;
-    width: 66%;
+    width: 100%;
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -54,4 +51,15 @@ li a:hover {
     width: 34%;
 }
 
+@media only screen and (max-width: 768px) {
+    #text {
+    width: 100%
+  }
 
+#rupert {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+}

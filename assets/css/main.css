@@ -58,6 +58,7 @@ li a:hover {
 
 #rupert {
     position: relative;
+    text-align: right;
     bottom: 0;
     right: 0;
     width: 100%;

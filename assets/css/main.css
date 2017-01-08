@@ -52,6 +52,7 @@ li a:hover {
 }
 
 .footer {
+	width: 100%;
 	position: fixed;
 	height: 30px;
 	bottom: 0;
@@ -60,6 +61,7 @@ li a:hover {
 	background-color: #333;
 	color: white;
 	padding-bottom: 20px;
+	text-align: center;
 }
 
 .footer .icon {
@@ -77,10 +79,11 @@ li a:hover {
 
 .footer-left {
 	display: inline-block;
-	width: 33%;
+	width: 30%;
 	float: left;
 	margin-left: 10px;
 	padding-top: 15px;
+	text-align: left;
 }
 
 .footer-center {
@@ -91,10 +94,11 @@ li a:hover {
 
 .footer-right {
 	display: inline-block;
-	
+	width: 30%;
 	float: right;
 	margin-right: 10px;
 	padding-top: 15px;
+	text-align: right;
 }
 
 @media only screen and (max-width: 768px) {

@@ -113,4 +113,34 @@ li a:hover {
     right: 0;
     width: 100%;
   }
+	
+	.footer {
+		display:flex; 
+		flex-direction: column; 
+		text-align:center;
+		height: inherit;
+		
+	}
+
+	.footer-left {
+		display: block;
+		float: none;
+		width: 100%;
+		order: 2;
+		margin-left: 10px;
+		padding-top: 15px;
+		text-align: center;
+	}
+
+	.footer-center {
+		display: block;
+		float: none;
+		width: 100%;
+		order: 1;
+		text-align: center;
+	}
+
+	.footer-right {
+		display: none;
+	}
 }

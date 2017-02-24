@@ -25,14 +25,20 @@ ul {
 li a {
     display: block;
     color: white;
-    text-align: left;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 .logo {
     float: left;
-    width: 100%;
+    width: 85%;
+    text-align: left;
+}
+
+.cv {
+		float: right;
+		width: 15%;
+    text-align: center;
 }
 
 /* Change the link color to #111 (black) on hover */

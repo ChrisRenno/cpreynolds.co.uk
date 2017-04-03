@@ -119,6 +119,20 @@ li a:hover {
     right: 0;
     width: 100%;
   }
+    
+  .logo {
+    display: block;
+    float: none;
+    width: 100%;
+    text-align: center;
+   }
+
+.cv {
+		float: none;
+    display: block;
+		width: 100%;
+    text-align: center;
+  }
 	
 	.footer {
 		display:flex; 
